@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutuja Dombe — Computer Engineering Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Rutuja Dombe, a Computer Engineering student specializing in Web Development, AI/ML, NLP, Computer Vision, and building impactful digital solutions.">
+  <meta name="keywords" content="Rutuja Dombe, Computer Engineering, Web Developer, AI, ML, NLP, Computer Vision, Portfolio, Student, Baramati">
+  <meta name="author" content="Rutuja Dombe">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/Rut-D">
+  <meta property="og:title" content="Rutuja Dombe — Portfolio">
+  <meta property="og:description" content="Computer Engineering Student | AI/ML Intern | Web Developer | Technical Enthusiast. Check out my projects and skills.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Rutuja Dombe — Portfolio">
+  <meta property="twitter:description" content="Computer Engineering Student | AI/ML Intern | Web Developer | Technical Enthusiast. Check out my projects and skills.">
+  <meta property="twitter:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Poppins (headings), Inter (body), Fira Code (terminal UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Devicon (tech logos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+  <!-- Font Awesome (social & interface icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container container">
+      <a href="#home" class="logo-wrapper" aria-label="Rutuja Dombe Logo">
+        <img src="assets/logo.png" alt="RD Logo" class="nav-logo-img">
+        <span class="logo-text">Rutuja<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Tablet Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Resume, Theme Toggle, Mobile Hamburger) -->
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1ct2HFtOgA1494m9BCDndATxrRbGv55I2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
+        </a>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero-section">
+    <!-- Visual Glow Effects in Background -->
+    <div class="bg-glow bg-glow-primary"></div>
+    <div class="bg-glow bg-glow-secondary"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content" data-reveal="fade-right">
+        <span class="hero-eyebrow">// Hello World, I am</span>
+        <h1 class="hero-title">Rutuja Dombe</h1>
+        
+        <!-- Animated Terminal Typing Shell -->
+        <div class="terminal-shell" aria-live="polite">
+          <div class="terminal-header">
+            <span class="shell-dot shell-dot-red"></span>
+            <span class="shell-dot shell-dot-yellow"></span>
+            <span class="shell-dot shell-dot-green"></span>
+            <span class="terminal-title">rutuja_stats.sh</span>
+          </div>
+          <div class="terminal-body">
+            <span class="terminal-prompt">></span> 
+            <span id="typingText" class="typing-text"></span>
+            <span class="typing-cursor">█</span>
+          </div>
+        </div>
+
+        <p class="hero-description">
+          A computer engineering student who builds robust web experiences, writes elegant code, and explores deep learning applications in Computer Vision and Natural Language Processing.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Contact Me</span> <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <!-- Social Connections -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/rutuja-dombe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Rut-D" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/rutu_D30" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter Profile">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="mailto:rutujadombe008@gmail.com" aria-label="Send Direct Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper" data-reveal="fade-left">
+        <div class="hero-image-border">
+          <div class="hero-image-inner">
+            <img src="assets/profile.jpg" alt="Rutuja Dombe Professional Profile Image" class="hero-profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+      <span class="mouse-icon"><span class="wheel"></span></span>
+      <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="section-subtitle">// Who I am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper" data-reveal="fade-right">
+          <div class="about-frame">
+            <img src="assets/profile.jpg" alt="Rutuja Dombe Portrait" class="about-profile-img">
+          </div>
+        </div>
+
+        <div class="about-content" data-reveal="fade-left">
+          <p class="about-paragraph">
+            Hi, I'm Rutuja, a passionate Computer Engineering student with a strong interest in technology, software development, and continuous learning. I enjoy transforming complex ideas into functional, intuitive, and visually appealing web applications, while actively exploring emerging fields like Artificial Intelligence and Machine Learning.
+          </p>
+          <p class="about-paragraph">
+            My engineering foundation is built on critical problem-solving, structured programming, and hands-on experimentation. I love tackling logical challenges, learning new frameworks, and constructing digital systems that offer real-world value. As a dedicated student, I am always seeking opportunities to expand my skill set, contribute to meaningful team projects, and develop into a versatile software engineer.
+          </p>
+
+          <!-- Core Academic Stats Grid -->
+          <div class="about-stats-container">
+            <div class="about-stat-card">
+              <span class="stat-value">12+</span>
+              <span class="stat-label">Technologies Mastered</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-value">89.2%</span>
+              <span class="stat-label">10th Grade Score</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="stat-value">AI/ML</span>
+              <span class="stat-label">Internship Trained</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="section-subtitle">// Tech Stack & Capabilities</span>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- GROUP 1: Languages -->
+        <div class="skill-category-box" data-reveal="fade-up">
+          <div class="category-header">
+            <i class="fa-solid fa-code category-icon"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-tag" data-tooltip="High Proficiency — Markup and Document Structure">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-tag" data-tooltip="High Proficiency — Cascade Styles & Layout Systems">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Intermediate — ES6+, DOM Interaction, Async Operations">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Intermediate — OOP, Scripting, AI/ML Libraries">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Intermediate — Core System Programming & Algorithms">
+              <i class="devicon-c-plain colored"></i>
+              <span>C Programming</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Basic — Object Oriented C++ Core">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Basic — Object Oriented Java Foundation">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUP 2: AI & Machine Learning -->
+        <div class="skill-category-box" data-reveal="fade-up" data-delay="100">
+          <div class="category-header">
+            <i class="fa-solid fa-brain category-icon"></i>
+            <h3>AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-tag" data-tooltip="Core Machine Learning — Regression, Classification, Clustering">
+              <i class="fa-solid fa-microchip"></i>
+              <span>ML Fundamentals</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Computer Vision — Image Processing & Object Detection models">
+              <i class="fa-solid fa-eye"></i>
+              <span>Computer Vision</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Natural Language Processing — Text classification, sequence models">
+              <i class="fa-solid fa-comments"></i>
+              <span>NLP</span>
+            </div>
+            <div class="skill-tag" data-tooltip="AI Systems — Supervised & Unsupervised networks">
+              <i class="fa-solid fa-robot"></i>
+              <span>AI Fundamentals</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Prompt Optimization — LLM Interaction and prompt engineering">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Prompt Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUP 3: CS & Web Concepts -->
+        <div class="skill-category-box" data-reveal="fade-up" data-delay="200">
+          <div class="category-header">
+            <i class="fa-solid fa-cubes category-icon"></i>
+            <h3>CS &amp; Web Concepts</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-tag" data-tooltip="Database Concepts — Schemas, Normalization, Queries">
+              <i class="fa-solid fa-database"></i>
+              <span>Database (DBMS)</span>
+            </div>
+            <div class="skill-tag" data-tooltip="SQL — Structured query composition, Joins, Constraints">
+              <i class="fa-solid fa-table"></i>
+              <span>SQL Queries</span>
+            </div>
+            <div class="skill-tag" data-tooltip="OOP — Inheritance, Polymorphism, Encapsulation, Abstraction">
+              <i class="fa-solid fa-cubes-stacked"></i>
+              <span>OOP Concepts</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Responsive Design — Mobile-first viewport setups, Flexbox & CSS Grid">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-tag" data-tooltip="UI Design — Clean typography, accessible contrast, visual hierarchy">
+              <i class="fa-solid fa-palette"></i>
+              <span>UI/UX Basics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUP 4: Tools & Platforms -->
+        <div class="skill-category-box" data-reveal="fade-up" data-delay="300">
+          <div class="category-header">
+            <i class="fa-solid fa-toolbox category-icon"></i>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <div class="skill-tag" data-tooltip="Version Control — Commits, Branching, Merges">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Collaboration & Code Hosting — Repositories, PRs, GH Pages">
+              <i class="devicon-github-original colored"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Interactive Environment — Data processing, Python script tests">
+              <i class="devicon-jupyter-plain colored"></i>
+              <span>Jupyter Notebook</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Graphic Design — Presentations, custom brand design setups">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>Canva Design</span>
+            </div>
+            <div class="skill-tag" data-tooltip="Code Editor — Development extensions, debugging tools">
+              <i class="devicon-vscode-plain colored"></i>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="section-subtitle">// Engineering Creations</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: Blooming Hearts -->
+        <article class="project-card" data-reveal="fade-up">
+          <div class="project-media">
+            <img src="assets/project-bloominghearts.jpg" alt="Blooming Hearts Logo Branding" class="project-img">
+            <div class="project-overlay"></div>
+            <span class="status-badge status-in-dev"><i class="fa-solid fa-person-digging"></i> In Development</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-card-title">Blooming Hearts</h3>
+            <p class="project-card-desc">
+              An online bouquet and flower-selling website designed to provide a seamless flower shopping experience. It features interactive product browsing, custom cart logic, and a beautifully customized romantic UI.
+            </p>
+            <div class="tech-badge-container">
+              <span class="tech-badge"><i class="devicon-html5-plain"></i> HTML5</span>
+              <span class="tech-badge"><i class="devicon-css3-plain"></i> CSS3</span>
+              <span class="tech-badge"><i class="devicon-javascript-plain"></i> JS (Vanilla)</span>
+            </div>
+            <div class="project-cta-links">
+              <a href="https://github.com/Rut-D" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+               <a href="https://bloominghearts.netlify.app/" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Placeholder Coming Soon -->
+        <article class="project-card project-card-placeholder" data-reveal="fade-up" data-delay="100">
+          <div class="placeholder-inner">
+            <div class="placeholder-icon-circle">
+              <i class="fa-solid fa-hourglass-half animate-pulse"></i>
+            </div>
+            <h3 class="placeholder-title">Web Dev Project</h3>
+            <span class="placeholder-tag">Coming Soon</span>
+            <p class="placeholder-text">
+              An upcoming responsive full-stack application incorporating database integration and interactive user features.
+            </p>
+            <div class="placeholder-dashed-border"></div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Placeholder AI/ML Coming Soon -->
+        <article class="project-card project-card-placeholder" data-reveal="fade-up" data-delay="200">
+          <div class="placeholder-inner">
+            <div class="placeholder-icon-circle">
+              <i class="fa-solid fa-brain animate-glow"></i>
+            </div>
+            <h3 class="placeholder-title">AI / ML Model</h3>
+            <span class="placeholder-tag">Coming Soon</span>
+            <p class="placeholder-text">
+              A computer vision or natural language processing model trained on custom datasets to solve analytical problems.
+            </p>
+            <div class="placeholder-dashed-border"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION SECTION ================= -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="section-subtitle">// Academic Journey</span>
+        <h2 class="section-title">Education &amp; Experience</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="timeline-container">
+        <!-- TIMELINE ITEM 1: Diploma (Current) -->
+        <div class="timeline-item" data-reveal="fade-up">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-media">
+              <img src="assets/svpm.jpg" alt="SVPM Institute Campus View" class="timeline-institution-img">
+            </div>
+            <div class="timeline-details">
+              <span class="timeline-period"><i class="fa-regular fa-calendar-days"></i> 2023 - Present</span>
+              <h3 class="timeline-degree">Diploma in Computer Engineering</h3>
+              <h4 class="timeline-school">SVPM Institute of Technology &amp; Engineering</h4>
+              <p class="timeline-description">
+                Currently pursuing a comprehensive diploma program. Malegaon Bk (Baramati) campus is renowned for deep engineering curriculum, modern computer laboratories, and specialized software project sessions. Gaining key fundamentals in algorithms, OOP principles, databases, operating systems, and computer networks.
+              </p>
+              <div class="location-badge">
+                <i class="fa-solid fa-location-dot"></i> Malegaon Bk, Baramati, MH, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 2: AI/ML Internship -->
+        <div class="timeline-item" data-reveal="fade-up" data-delay="100">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-media">
+              <img src="assets/airg.jpg" alt="AIR G International Logo" class="timeline-institution-img">
+            </div>
+            <div class="timeline-details">
+              <span class="timeline-period"><i class="fa-regular fa-calendar-days"></i> Summer 2025</span>
+              <h3 class="timeline-degree">AI/ML Internship</h3>
+              <h4 class="timeline-school">AIR G International</h4>
+              <p class="timeline-description">
+                Engaged in immersive hands-on training focused on Artificial Intelligence and Machine Learning paradigms. Worked with regression and classification algorithms, learned data parsing libraries (pandas, numpy), and trained neural networks. Implemented basic models in Computer Vision and Natural Language Processing.
+              </p>
+              <div class="location-badge">
+                <i class="fa-solid fa-location-dot"></i> Virtual / Pune, MH, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 3: 10th Standard -->
+        <div class="timeline-item" data-reveal="fade-up" data-delay="200">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-media">
+              <img src="assets/mes.jpg" alt="MES High School Baramati Building" class="timeline-institution-img">
+            </div>
+            <div class="timeline-details">
+              <span class="timeline-period"><i class="fa-regular fa-calendar-days"></i> Secondary Schooling</span>
+              <h3 class="timeline-degree">10th Standard Board Examination</h3>
+              <h4 class="timeline-school">MES High School, Baramati</h4>
+              <p class="timeline-description">
+                Completed secondary schooling with academic honors. Established a strong foundational base in logical mathematics, physics, and communication. Graduated with a high distinction score of <strong>89.20%</strong> in the state board examinations.
+              </p>
+              <div class="location-badge">
+                <i class="fa-solid fa-location-dot"></i> Baramati, Pune, MH, India
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="section-subtitle">// Say Hello</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel" data-reveal="fade-right">
+          <h3 class="contact-panel-title">Let's discuss a project!</h3>
+          <p class="contact-panel-text">
+            Whether you have a web application idea, an internship opportunity, or want to discuss machine learning implementations, my inbox is always open.
+          </p>
+
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Email Me</span>
+                <a href="mailto:rutujadombe008@gmail.com" class="channel-value">rutujadombe008@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/rutuja-dombe" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/rutuja-dombe</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">GitHub Repo</span>
+                <a href="https://github.com/Rut-D" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/Rut-D</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">X / Twitter</span>
+                <a href="https://x.com/rutu_D30" target="_blank" rel="noopener noreferrer" class="channel-value">x.com/rutu_D30</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Submitting directly to Google Forms Link -->
+        <form class="contact-form-panel" id="customContactForm" data-reveal="fade-left">
+          <h3 class="form-title">Send a Message</h3>
+          
+          <div class="form-group">
+            <label for="formName" class="form-label">Full Name</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-user input-icon"></i>
+              <input type="text" id="formName" class="form-input" placeholder="Rutuja Dombe" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formEmail" class="form-label">Email Address</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-envelope input-icon"></i>
+              <input type="email" id="formEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage" class="form-label">Your Message</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-message input-icon textarea-icon"></i>
+              <textarea id="formMessage" class="form-input form-textarea" rows="4" placeholder="Let's build something together..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block submit-form-btn">
+            <span>Open Google Form</span> <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          
+          <p class="form-notice">
+            Note: Submitting this form will automatically prompt your message details and open my official <a href="https://forms.gle/SKmL1wdYauKBmAGz6" target="_blank" rel="noopener noreferrer">Google Feedback Form</a> in a new window to securely log your request.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-section">
+    <div class="container footer-inner">
+      <div class="footer-branding">
+        <a href="#home" class="logo-wrapper">
+          <img src="assets/logo.png" alt="RD Logo" class="footer-logo-img">
+          <span class="logo-text">Rutuja<span class="accent-dot">.</span></span>
+        </a>
+        <p class="footer-copyright">&copy; 2026 Rutuja R Dombe. All rights reserved.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/rutuja-dombe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile Link">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Rut-D" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile Link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://x.com/rutu_D30" target="_blank" rel="noopener noreferrer" aria-label="X Profile Link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+
+      <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top of the page">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
